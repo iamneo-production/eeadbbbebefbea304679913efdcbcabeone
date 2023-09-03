@@ -45,12 +45,12 @@ function handleButtonClick(event) {
             if (winner === "Draw") {
                 resultText.textContent = "It's a Draw!";
             } else {
-                resultText.textContent = `Player ${winner} wins!`;
+                resultText.textContent = `Player ${winner} Won 🎉`;
             }
             resetBtn.disabled = false;
         } else {
             currentPlayer = currentPlayer === "X" ? "O" : "X";
-            resultText.textContent = `Player ${currentPlayer}'s turn`;
+            resultText.textContent = `Player ${currentPlayer} Turn`;
         }
     }
 }
@@ -62,7 +62,7 @@ function resetBoard() {
         button.textContent = "";
         button.disabled = false;
     });
-    resultText.textContent = "Player X's turn";
+    resultText.textContent = "Player X turn";
     resetBtn.disabled = true;
 }
 buttons.forEach(button => {
