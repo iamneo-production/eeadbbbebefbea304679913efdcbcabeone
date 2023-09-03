@@ -1,7 +1,7 @@
 const board = document.getElementById("board");
 const buttons = document.querySelectorAll(".btn");
-const resultText = document.getElementById("result");
-const resetBtn = document.getElementById("resetBtn");
+const resultText = document.getElementsByClassName("result");
+const resetBtn = document.getElementById("reset");
 
 let currentPlayer = "X";
 let gameBoard = ["", "", "", "", "", "", "", "", ""];
