@@ -28,5 +28,22 @@ header{
   justify-content: center;
 }
 .btn{
-  
+  border: 2px solid white;
+  border-radius: 5px;
+  width: 75px;
+  height: 75px;
+  font-size: 50px;
+  font-weight: 500;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 5px;
+}
+.btn:hover{
+  background-color: rgba(255,255,255,0.7);
+}
+.btn:disabled{
+  color: black;
+  cursor: no-drop;
 }
